@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: Lato;
+    src: url('../fonts/Lato-Italic.ttf');
+}
+
+@font-face {
+	font-family: Lato;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+	font-family: Share Tech Mono;
+    src: url('../fonts/ShareTechMono-Regular.ttf');
+}
+
+.root {
+    -fx-font-family: 'Lato';
+    -fx-font-size: 14;
+}
+
+.title1 {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.title2 {
+    -fx-font-size: 16;
+    -fx-font-style: italic;
+}
+
+.title3 {
+    -fx-font-style: italic;
+}
+
+.about-text {
+-fx-font-family: 'Share Tech Mono';
+-fx-font-size: 16;
+}
+
+.highlight {
+    -fx-font-size: 12;
+}
+
+.period .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.period .duration {
+    -fx-font-size: 12;
+    -fx-font-weight: normal;
+    -fx-font-style: italic;
+}
+
+.section-title {
+    -fx-font-size: 20;
+}
+
+.skill .name {
+    -fx-font-size: 18;
+}
+
+.reference .description {
+    -fx-font-style: italic;
+ }

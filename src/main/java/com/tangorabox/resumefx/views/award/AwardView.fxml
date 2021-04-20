@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="award, background" type="VBox"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.award.AwardView">
+    <children>
+        <Label fx:id="title" styleClass="title1" text="title"/>
+        <Label fx:id="awarder" styleClass="title2" text="awarder">
+            <graphic>
+                <FontAwesomeIconView glyphName="UNIVERSITY"/>
+            </graphic>
+        </Label>
+        <Label fx:id="summary" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+               minHeight="-Infinity" minWidth="0.0" text="summary" VBox.vgrow="SOMETIMES"/>
+    </children>
+</fx:root>

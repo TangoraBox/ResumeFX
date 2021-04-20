@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="VBox"
+         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" styleClass="background"
+         fx:controller="com.tangorabox.resumefx.views.interest.InterestView">
+   <children>
+      <Label fx:id="name" text="name" styleClass="title2"/>
+      <HBox fx:id="keywords"/>
+   </children>
+</fx:root>

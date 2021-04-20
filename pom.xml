@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.tangorabox</groupId>
+  <artifactId>resume-fx</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>resume-fx</name>
+  <description>JavaFX Webview of JSON resume files </description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.release>11</java.release>
+    <project.inceptionYear>2021</project.inceptionYear>
+    <jpro.version>2021.1.0-PREVIEW2</jpro.version>
+    <javafx.version>16</javafx.version>
+  </properties>
+
+  <organization>
+    <name>Tangorabox.com</name>
+    <url>https://tangorabox.com</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>GaRzY</name>
+      <email>info@tangorabox.com</email>
+      <url>https://github.com/garzy</url>
+      <id>GaRzY</id>
+      <roles>
+        <role>Founder</role>
+        <role>Maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <url>https://github.com/TangoraBox/ResumeFX/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>GNU GPL v3</name>
+      <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+    </license>
+  </licenses>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+      </url>
+    </repository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/TangoraBox/ResumeFX.git</connection>
+    <developerConnection>scm:git:git@github.com:TangoraBox/ResumeFX.git</developerConnection>
+    <url>https://github.com/TangoraBox/ResumeFX</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>jcenter</id>
+      <name>jcenter</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+    <repository>
+      <id>jpro - sandec repository</id>
+      <url>https://sandec.bintray.com/repo</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jpro - sandec repository</id>
+      <url>https://sandec.bintray.com/repo</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.tangorabox</groupId>
+      <artifactId>reactive-desk-fx</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <!-- JavaFX START -->
+
+    <dependency>
+      <artifactId>javafx-base</artifactId>
+      <groupId>org.openjfx</groupId>
+      <version>${javafx.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-graphics</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+
+    <!-- JavaFX END -->
+
+    <dependency>
+      <groupId>com.sandec.jpro</groupId>
+      <artifactId>jpro-webapi</artifactId>
+      <version>${jpro.version}</version>
+    </dependency>
+
+    <!-- JSonResume Validator START-->
+    <dependency>
+      <groupId>io.github.eaxdev</groupId>
+      <artifactId>jsonresume-validator</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+
+    <!-- JSonResume Validator END-->
+
+    <!-- Font Awesome START -->
+
+    <dependency>
+      <groupId>de.jensd</groupId>
+      <artifactId>fontawesomefx-fontawesome</artifactId>
+      <version>4.7.0-11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>de.jensd</groupId>
+      <artifactId>fontawesomefx-commons</artifactId>
+      <version>11.0</version>
+    </dependency>
+    <!-- Font Awesome END -->
+
+    <!--SLF4J LogBack Implementation START -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.0-alpha1</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.3.0-alpha4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.3.0-alpha4</version>
+    </dependency>
+    <!--SLF4J LogBack Implementation END -->
+
+    <!-- Test Dependencies START -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.19.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tangorabox</groupId>
+      <artifactId>component-inspector-fx</artifactId>
+      <version>1.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>fr.brouillard.oss</groupId>
+      <artifactId>cssfx</artifactId>
+      <version>11.4.0</version>
+    </dependency>
+    <!-- Test Dependencies END -->
+  </dependencies>
+
+  <build>
+
+    <plugins>
+      <plugin>
+        <groupId>com.sandec.jpro</groupId>
+        <artifactId>jpro-maven-plugin</artifactId>
+        <version>${jpro.version}</version>
+        <configuration>
+          <visible>false</visible>
+          <mainClassName>com.tangorabox.resumefx.ResumeFX</mainClassName>
+          <openingPath>/</openingPath>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${java.release}</source>
+          <target>${java.release}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>${project.build.sourceDirectory}</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+      <testResource>
+        <directory>${project.build.testSourceDirectory}</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </testResource>
+    </testResources>
+  </build>
+
+</project>

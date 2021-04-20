@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="publication, background"
+         type="VBox" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.tangorabox.resumefx.views.publication.PublicationView">
+    <children>
+        <Label fx:id="name" styleClass="title1" text="name"/>
+        <Label fx:id="publisher" styleClass="title2" text="publisher">
+            <graphic>
+                <FontAwesomeIconView glyphName="UNIVERSITY"/>
+            </graphic>
+        </Label>
+        <Label fx:id="summary" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" text="summary"
+               wrapText="true" VBox.vgrow="SOMETIMES"/>
+        <Hyperlink fx:id="website">
+            <graphic>
+                <FontAwesomeIconView glyphName="LINK"/>
+            </graphic>
+        </Hyperlink>
+    </children>
+</fx:root>

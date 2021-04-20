@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="about-project" type="VBox"
+         xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.tangorabox.resumefx.views.aboutproject.AboutProjectView">
+   <children>
+      <TextArea fx:id="aboutText" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                styleClass="about-text" wrapText="true" VBox.vgrow="ALWAYS"/>
+   </children>
+</fx:root>

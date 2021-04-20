@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  resumefx:
+    build: ./
+    image: resumefx:1.0.0
+    container_name: resumefx
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - 18080:8080
+    command: ./bin/start.sh
+    volumes:
+      - data:/ResumeFX-jpro/data/
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      device: /var/www/cv3d.tangorabox.com/web/CV3D_Data
+      o: bind
+      type: none

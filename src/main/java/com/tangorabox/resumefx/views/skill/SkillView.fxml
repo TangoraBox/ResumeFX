@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="skill, background" type="VBox"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.skill.SkillView">
+   <children>
+      <StackPane>
+         <children>
+            <ProgressBar fx:id="progress" maxWidth="1.7976931348623157E308" progress="0.0" styleClass="progress"/>
+            <Label fx:id="name" styleClass="name"/>
+         </children>
+      </StackPane>
+      <FlowPane fx:id="keywords" maxWidth="1.7976931348623157E308" minWidth="0.0"/>
+   </children>
+</fx:root>

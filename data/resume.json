@@ -1,0 +1,155 @@
+{
+    "basics": {
+        "name": "John Doe",
+        "label": "Junior Programmer",
+        "picture": "https://pbs.twimg.com/profile_images/773151694934847488/g0aE4CJ6_400x400.jpg",
+        "email": "John.Doe@gmail.com",
+        "phone": "+11 123 123 123",
+        "summary": "Some one word summary.\nOr you can use new lines for paragraphs.",
+        "location": {
+            "address": "1 Smith St",
+            "postalCode": "1010",
+            "city": "LA",
+            "countryCode": "US",
+            "region": "California"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "John Doe",
+                "url": "https://www.linkedin.com/in/example/"
+            },
+            {
+                "network": "GitHub",
+                "username": "John-Doe",
+                "url": "https://github.com/example"
+            },
+            {
+                "network": "Twitter",
+                "username": "john",
+                "url": "http://twitter.com/john"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Some company 1",
+            "position": "Developer",
+            "website": "http://company.com",
+            "startDate": "2018-07-01",
+            "endDate": "2019-12-05",
+            "summary": "Worked for the business.",
+            "highlights": [
+                "Highlight 1",
+                "Highlight 2",
+                "Highlight 3",
+                "Highlight 4"
+            ]
+        },
+        {
+            "company": "Some company 2",
+            "position": "Developer",
+            "startDate": "2018-01-01",
+            "endDate": "2019-12-05",
+            "summary": "Worked for the business.",
+            "highlights": [
+                "Highlight 1",
+                "Highlight 2",
+                "Highlight 3",
+                "Highlight 4"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Some University",
+            "area": "Software engineering",
+            "studyType": "Bachelor",
+            "startDate": "2017-01-01",
+            "endDate": "2019-12-31",
+            "gpa": "4.0",
+            "courses": [
+                "Programming - 101"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "4",
+            "keywords": [
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Java"
+            ]
+        },
+        {
+            "name": "Frontend Frameworks",
+            "level": "2",
+            "keywords": [
+                "ReactJs",
+                "Angular"
+            ]
+        },
+        {
+            "name": "Backend Frameworks",
+            "level": "5",
+            "keywords": [
+                "Express",
+                "Spring"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": [
+                "Ferrets",
+                "Unicorns"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Lorem ipsum dolor sit amet consectetur adipiscing, elit nostra cras orci odio. Sapien ut quam risus diam augue aliquam, ornare primis platea luctus dictum tincidunt, natoque quis montes pretium leo. Tristique urna maecenas nec habitasse mus lectus pharetra laoreet orci integer et nisl, netus ac est fringilla cursus lacus sociosqu ligula tincidunt habitant."
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "http://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description...",
+            "highlights": [
+                "Awarded 'Volunteer of the Month'"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description......"
+        }
+    ]
+}

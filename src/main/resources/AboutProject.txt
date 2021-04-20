@@ -1,0 +1,5 @@
+This project renders a JavaFX view of my resume in .json format (https://jsonresume.org) and it's embed inside web browser thanks to JPro (https://www.jpro.one).
+
+It's has been deployed on Ubuntu server as a docker container and has continuous integration and continuous delivery with GitLab pipelines.
+
+The resume.json file is mounted on external volume to allow edition without recompile the project again.

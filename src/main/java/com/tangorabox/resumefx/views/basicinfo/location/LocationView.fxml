@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root alignment="CENTER_LEFT" spacing="5.0" type="HBox" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.tangorabox.resumefx.views.basicinfo.location.LocationView">
+   <children>
+      <FontAwesomeIconView glyphName="MAP_MARKER" glyphSize="20" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin></FontAwesomeIconView>
+      <FlowPane hgap="10.0" minWidth="0.0" prefWrapLength="200.0" vgap="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="address" text="address" />
+            <Label fx:id="postalCode" text="postalCode" />
+            <Label fx:id="city" text="city" />
+            <Label fx:id="region" text="region" />
+            <Label />
+         </children>
+      </FlowPane>
+   </children>
+</fx:root>

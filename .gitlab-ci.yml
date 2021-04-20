@@ -1,0 +1,47 @@
+image: maven:3.8.1-openjdk-15
+
+variables:
+  DOCKER_DRIVER: overlay2
+  MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository -Xms2g -Xmx6g"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .m2/repository/
+    - target/
+
+stages:
+  - runtime
+  - docker-build
+
+runtime:
+  tags:
+    - build
+  stage: runtime
+  script:
+    - echo "Generating JPro .zip file"
+    - mvn $MAVEN_CLI_OPTS jpro:release
+  artifacts:
+    paths:
+      - target/ResumeFX-jpro.zip
+  only:
+    - master
+  when: manual
+
+docker-build:
+  image: docker/compose:latest
+  services:
+    - name: "docker:dind"
+  tags:
+    - build
+  stage: docker-build
+  only:
+    - master
+  when: manual
+  script:
+    - echo unzipping jpro zip file
+    - unzip target/ResumeFX-jpro.zip
+    - echo "Upgrading service throught docker-compose"
+    - docker-compose build
+    - docker-compose up -d

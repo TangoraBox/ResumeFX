@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="HBox"
+         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" styleClass="language, background"
+         fx:controller="com.tangorabox.resumefx.views.language.LanguageView">
+   <children>
+      <Label fx:id="language" text="language" styleClass="title2"/>
+      <Label fx:id="fluency" text="fluency" styleClass="title3"/>
+   </children>
+</fx:root>

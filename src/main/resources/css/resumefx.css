@@ -1,0 +1,120 @@
+@import url('fonts.css');
+
+.about .title1,.title2 {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.about-project .scroll-pane {
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-border-insets: 1;
+}
+
+.about-project .scroll-pane .content {
+    -fx-background-color: lightgrey;
+}
+
+.about-text {
+    -fx-text-fill: black;
+    -fx-wrap-text: true;
+}
+
+.background {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: lightgray;
+    -fx-padding: 5;
+}
+
+.bottom-bar {
+    -fx-padding: 5;
+    -fx-background-color: lightgray;
+    -fx-border-color: lightgray;
+    -fx-border-insets: 10;
+    -fx-background-insets: 10;
+}
+
+
+FlowPane {
+    -fx-hgap: 2;
+    -fx-vgap: 2;
+    -fx-padding: 5;
+}
+
+.highlight {
+    -fx-background-color: lightgray;
+    -fx-border-color: gray;
+    -fx-padding: 2 5 2 5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+HBox {
+    -fx-spacing: 5;
+}
+
+.language {
+    -fx-spacing: 5;
+}
+
+.period .label {
+    -fx-padding: -10;
+}
+
+.picture-panel {
+    -fx-border-width: 4;
+    -fx-border-color: lightblue;
+    -fx-border-radius: 90;
+}
+
+.reference {
+    -fx-spacing: 10;
+}
+
+.reference HBox {
+    -fx-spacing: 10;
+}
+
+.section-pane {
+    -fx-expanded: true;
+    -fx-collapsible: false;
+    -fx-padding: 10;
+    -fx-border-color: lightgray;
+    -fx-border-insets: 10;
+    -fx-background-insets: 10;
+    -fx-background-color: white;
+}
+
+.section-title {
+    -fx-fill: black;
+}
+
+.section-pane .title-pane {
+    -fx-background-color: lightgrey;
+}
+
+.section-pane VBox {
+    -fx-spacing: 10;
+    -fx-padding: 5;
+}
+
+
+.skill .progress {
+    -fx-min-height: 30;
+}
+
+.skill .progress .bar {
+    -fx-background-color: linear-gradient(to right, cornflowerblue, lightsteelblue);
+}
+
+.skill .name {
+    -fx-text-fill: black;
+}
+
+.separator > * {
+    -fx-border-color: lightblue;
+    -fx-opacity: 0.5;
+}

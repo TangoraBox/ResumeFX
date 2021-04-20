@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="VBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.basicinfo.BasicInfoView">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+            <children>
+                <Label fx:id="name" maxWidth="1.7976931348623157E308" styleClass="title1" text="name" />
+                <Label fx:id="label" maxWidth="1.7976931348623157E308" styleClass="title2" text="label" />
+                <HBox fillHeight="false" VBox.vgrow="NEVER">
+                    <children>
+                        <HBox fillHeight="false" styleClass="picture-panel" HBox.hgrow="NEVER">
+                            <children>
+                                <ImageView fx:id="picture" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                        <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Hyperlink fx:id="email" text="email">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="ENVELOPE" glyphSize="16" />
+                                    </graphic>
+                                </Hyperlink>
+                                <Label fx:id="phone" text="phone">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="PHONE_SQUARE" glyphSize="16" />
+                                    </graphic>
+                           <padding>
+                              <Insets left="6.0" />
+                           </padding>
+                                </Label>
+                                <Hyperlink fx:id="website" text="website">
+                                    <graphic>
+                              <FontAwesomeIconView glyphName="LINK" glyphSize="16" />
+                           </graphic>
+                        </Hyperlink>
+                        <VBox fx:id="location" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="profiles" styleClass="background" />
+   </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="about" />
+   </styleClass>
+</fx:root>
