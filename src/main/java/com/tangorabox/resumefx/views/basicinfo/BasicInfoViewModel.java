@@ -1,7 +1,7 @@
 package com.tangorabox.resumefx.views.basicinfo;
 
 import com.tangorabox.resumefx.views.basicinfo.location.LocationViewModel;
-import com.tangorabox.resumefx.views.basicinfo.profiles.ProfilesViewModel;
+import com.tangorabox.resumefx.views.basicinfo.profile.ProfileViewModel;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -20,7 +20,7 @@ public class BasicInfoViewModel {
     private final StringProperty webSite = new SimpleStringProperty();
     private final StringProperty summary = new SimpleStringProperty();
     private final ObjectProperty<LocationViewModel> location = new SimpleObjectProperty<>();
-    private ObservableList<ProfilesViewModel> profiles = FXCollections.observableArrayList();
+    private ObservableList<ProfileViewModel> profiles = FXCollections.observableArrayList();
 
 
     public String getName() {
@@ -119,11 +119,11 @@ public class BasicInfoViewModel {
         this.location.set(location);
     }
 
-    public ObservableList<ProfilesViewModel> getProfiles() {
+    public ObservableList<ProfileViewModel> getProfiles() {
         return profiles;
     }
 
-    public void setProfiles(ObservableList<ProfilesViewModel> profiles) {
+    public void setProfiles(ObservableList<ProfileViewModel> profiles) {
         this.profiles = profiles;
     }
 }

@@ -3,17 +3,15 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.*?>
-<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="work, background" type="VBox"
-         xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.work.WorkView">
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="work, background" type="VBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.work.WorkView">
    <children>
-      <FlowPane minWidth="0.0">
+      <FlowPane minWidth="0.0" VBox.vgrow="SOMETIMES">
          <children>
-            <Label fx:id="position" styleClass="title1" text="position"/>
-            <Hyperlink fx:id="company" styleClass="title1"/>
+            <Label fx:id="position" minHeight="-Infinity" minWidth="0.0" styleClass="title1" text="position" wrapText="true" />
+            <Hyperlink fx:id="company" styleClass="title1" />
          </children>
       </FlowPane>
-      <Label fx:id="summary" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" text="summary"
-             wrapText="true" VBox.vgrow="SOMETIMES"/>
-      <FlowPane fx:id="highlights" maxWidth="1.7976931348623157E308" minWidth="0.0"/>
+      <Label fx:id="summary" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" text="summary" wrapText="true" VBox.vgrow="SOMETIMES" />
+      <FlowPane fx:id="highlights" maxWidth="1.7976931348623157E308" minWidth="0.0" />
    </children>
 </fx:root>

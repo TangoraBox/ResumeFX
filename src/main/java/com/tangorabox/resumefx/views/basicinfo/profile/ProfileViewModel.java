@@ -1,9 +1,9 @@
-package com.tangorabox.resumefx.views.basicinfo.profiles;
+package com.tangorabox.resumefx.views.basicinfo.profile;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class ProfilesViewModel {
+public class ProfileViewModel {
 
     private final StringProperty network = new SimpleStringProperty();
     private final StringProperty username = new SimpleStringProperty();

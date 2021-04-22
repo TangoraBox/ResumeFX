@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Hyperlink?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-
-<fx:root type="VBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.basicinfo.BasicInfoView">
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<fx:root maxWidth="1.7976931348623157E308" minWidth="0.0" type="VBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.basicinfo.BasicInfoView">
     <children>
-        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity">
             <children>
-                <Label fx:id="name" maxWidth="1.7976931348623157E308" styleClass="title1" text="name" />
-                <Label fx:id="label" maxWidth="1.7976931348623157E308" styleClass="title2" text="label" />
+                <Label fx:id="name" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" styleClass="title1" text="name" wrapText="true" />
+                <Label fx:id="label" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="0.0" styleClass="title2" text="label" wrapText="true" />
                 <HBox fillHeight="false" VBox.vgrow="NEVER">
                     <children>
                         <HBox fillHeight="false" styleClass="picture-panel" HBox.hgrow="NEVER">
@@ -22,14 +19,14 @@
                                 <ImageView fx:id="picture" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
                             </children>
                         </HBox>
-                        <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                        <VBox maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS">
                             <children>
-                                <Hyperlink fx:id="email" text="email">
+                                <Hyperlink fx:id="email" minWidth="-Infinity" text="email">
                                     <graphic>
                                         <FontAwesomeIconView glyphName="ENVELOPE" glyphSize="16" />
                                     </graphic>
                                 </Hyperlink>
-                                <Label fx:id="phone" text="phone">
+                                <Label fx:id="phone" minWidth="-Infinity" text="phone">
                                     <graphic>
                                         <FontAwesomeIconView glyphName="PHONE_SQUARE" glyphSize="16" />
                                     </graphic>
@@ -37,7 +34,7 @@
                               <Insets left="6.0" />
                            </padding>
                                 </Label>
-                                <Hyperlink fx:id="website" text="website">
+                                <Hyperlink fx:id="website" minWidth="-Infinity" text="website">
                                     <graphic>
                               <FontAwesomeIconView glyphName="LINK" glyphSize="16" />
                            </graphic>

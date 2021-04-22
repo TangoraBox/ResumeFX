@@ -1,4 +1,4 @@
-package com.tangorabox.resumefx.views.basicinfo.profiles;
+package com.tangorabox.resumefx.views.basicinfo.profile;
 
 import com.tangorabox.reactivedesk.FXMLView;
 import com.tangorabox.resumefx.util.Hyperlinks;
@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @FXMLView
-public class ProfilesView extends HBox implements Initializable {
+public class ProfileView extends HBox implements Initializable {
 
     @FXML
     private FontAwesomeIconView network;
@@ -26,17 +26,17 @@ public class ProfilesView extends HBox implements Initializable {
     @Inject
     private Hyperlinks hyperlinks;
 
-    private final ObjectProperty<ProfilesViewModel> model = new SimpleObjectProperty<>();
+    private final ObjectProperty<ProfileViewModel> model = new SimpleObjectProperty<>();
 
-    public ProfilesViewModel getModel() {
+    public ProfileViewModel getModel() {
         return model.get();
     }
 
-    public ObjectProperty<ProfilesViewModel> modelProperty() {
+    public ObjectProperty<ProfileViewModel> modelProperty() {
         return model;
     }
 
-    public void setModel(ProfilesViewModel model) {
+    public void setModel(ProfileViewModel model) {
         this.model.set(model);
     }
 
@@ -46,7 +46,7 @@ public class ProfilesView extends HBox implements Initializable {
         model.addListener((observable, oldValue, newValue) -> bindComponents(newValue));
     }
 
-    private void bindComponents(ProfilesViewModel viewModel) {
+    private void bindComponents(ProfileViewModel viewModel) {
         network.glyphNameProperty().bind(viewModel.networkProperty());
         url.textProperty().bind(viewModel.urlProperty());
     }

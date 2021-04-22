@@ -5,7 +5,7 @@ import com.tangorabox.resumefx.util.Hyperlinks;
 import com.tangorabox.resumefx.util.TextHelper;
 import com.tangorabox.resumefx.views.View;
 import com.tangorabox.resumefx.views.basicinfo.location.LocationView;
-import com.tangorabox.resumefx.views.basicinfo.profiles.ProfilesView;
+import com.tangorabox.resumefx.views.basicinfo.profile.ProfileView;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
@@ -53,7 +53,7 @@ public class BasicInfoView extends VBox implements Initializable, View<BasicInfo
     private LocationView locationView;
 
     @Inject
-    private Provider<ProfilesView> profilesViewProvider;
+    private Provider<ProfileView> profileViewProvider;
 
     @Inject
     private Hyperlinks hyperlinks;
@@ -102,7 +102,7 @@ public class BasicInfoView extends VBox implements Initializable, View<BasicInfo
 
         profiles.getChildren().setAll(
                 viewModel.getProfiles().stream().map(profilesViewModel -> {
-                    ProfilesView profilesView = profilesViewProvider.get();
+                    ProfileView profilesView = profileViewProvider.get();
                     profilesView.setModel(profilesViewModel);
                     return profilesView;
                 }).collect(Collectors.toList()));

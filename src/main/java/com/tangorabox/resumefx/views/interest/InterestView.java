@@ -8,7 +8,7 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
@@ -22,7 +22,7 @@ public class InterestView extends VBox implements Initializable, View<InterestVi
     private Label name;
 
     @FXML
-    private HBox keywords;
+    private FlowPane keywords;
 
     private final ObjectProperty<InterestViewModel> model = new SimpleObjectProperty<>();
 

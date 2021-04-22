@@ -101,6 +101,8 @@ public class ResumeView extends BorderPane implements Initializable, View<Resume
                 sectionPaneFactory.create(Section.REFERENCE, viewModel.getReferences()),
                 aboutPane
         );
+        aboutPane.managedProperty().unbind();
+        aboutPane.setManaged(true);
     }
 
     private void desktopLayout(ResumeViewModel viewModel) {

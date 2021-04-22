@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.HBox?>
+<fx:root alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="HBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.basicinfo.profile.ProfileView">
+   <children>
+      <FontAwesomeIconView fx:id="network" glyphSize="16" />
+      <Hyperlink fx:id="url" />
+   </children>
+</fx:root>

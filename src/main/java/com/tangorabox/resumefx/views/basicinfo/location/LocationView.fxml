@@ -2,17 +2,15 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
-
-<fx:root alignment="CENTER_LEFT" spacing="5.0" type="HBox" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.tangorabox.resumefx.views.basicinfo.location.LocationView">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" type="HBox" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tangorabox.resumefx.views.basicinfo.location.LocationView">
    <children>
       <FontAwesomeIconView glyphName="MAP_MARKER" glyphSize="20" HBox.hgrow="NEVER">
          <HBox.margin>
             <Insets left="5.0" />
          </HBox.margin></FontAwesomeIconView>
-      <FlowPane hgap="10.0" minWidth="0.0" prefWrapLength="200.0" vgap="10.0" HBox.hgrow="ALWAYS">
+      <FlowPane hgap="10.0" minWidth="0.0" prefWrapLength="200.0" vgap="10.0">
          <children>
             <Label fx:id="address" text="address" />
             <Label fx:id="postalCode" text="postalCode" />
