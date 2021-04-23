@@ -16,7 +16,7 @@
     <java.release>11</java.release>
     <project.inceptionYear>2021</project.inceptionYear>
     <jpro.version>2020.1.6</jpro.version>
-    <javafx.version>16</javafx.version>
+    <javafx.version>15.0.1</javafx.version>
   </properties>
 
   <organization>

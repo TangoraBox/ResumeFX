@@ -13,7 +13,7 @@ services:
       - 18080:8080
     command: ./bin/start.sh
     volumes:
-      - data:/ResumeFX-jpro/data/
+      - data:/resume-fx-jpro/data/
 
 volumes:
   data:

@@ -4,6 +4,7 @@ variables:
   DOCKER_DRIVER: overlay2
   MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository -Xms2g -Xmx6g"
+  ZIP_FILE: "resume-fx-jpro.zip"
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -24,10 +25,10 @@ runtime:
     - mvn $MAVEN_CLI_OPTS jpro:release
   artifacts:
     paths:
-      - target/ResumeFX-jpro.zip
+      - target/$ZIP_FILE
   only:
     - master
-  when: manual
+  when: always
 
 docker-build:
   image: docker/compose:latest
@@ -41,7 +42,7 @@ docker-build:
   when: manual
   script:
     - echo unzipping jpro zip file
-    - unzip target/ResumeFX-jpro.zip
+    - unzip target/$ZIP_FILE
     - echo "Upgrading service throught docker-compose"
     - docker-compose build
     - docker-compose up -d
