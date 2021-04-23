@@ -15,7 +15,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.release>11</java.release>
     <project.inceptionYear>2021</project.inceptionYear>
-    <jpro.version>2021.1.0-PREVIEW2</jpro.version>
+    <jpro.version>2020.1.6</jpro.version>
     <javafx.version>16</javafx.version>
   </properties>
 
@@ -76,14 +76,14 @@
     </repository>
     <repository>
       <id>jpro - sandec repository</id>
-      <url>https://sandec.bintray.com/repo</url>
+      <url>https://sandec.jfrog.io/artifactory/repo/</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
       <id>jpro - sandec repository</id>
-      <url>https://sandec.bintray.com/repo</url>
+      <url>https://sandec.jfrog.io/artifactory/repo/</url>
     </pluginRepository>
   </pluginRepositories>
 
