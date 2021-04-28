@@ -2,6 +2,7 @@ package com.tangorabox.resumefx.thirdparty.eaxdev;
 
 import com.google.common.base.Strings;
 import com.tangorabox.resumefx.io.GenericViewModelConverter;
+import com.tangorabox.resumefx.util.TextHelper;
 import com.tangorabox.resumefx.views.basicinfo.BasicInfoViewModel;
 import io.gitgub.eaxdev.jsonresume.validator.model.BasicInfo;
 import javafx.collections.FXCollections;
@@ -18,11 +19,13 @@ public class BasicInfoConverter implements GenericViewModelConverter<BasicInfo, 
 
     private final LocationConverter locationConverter;
     private final ProfilesConverter profilesConverter;
+    private final TextHelper textHelper;
 
     @Inject
-    public BasicInfoConverter(LocationConverter locationConverter, ProfilesConverter profilesConverter) {
+    public BasicInfoConverter(LocationConverter locationConverter, ProfilesConverter profilesConverter, TextHelper textHelper) {
         this.locationConverter = locationConverter;
         this.profilesConverter = profilesConverter;
+        this.textHelper = textHelper;
     }
 
 
@@ -37,7 +40,7 @@ public class BasicInfoConverter implements GenericViewModelConverter<BasicInfo, 
             loadPicture(dto.getPicture(), basicInfoViewModel);
         }
 
-        basicInfoViewModel.setSummary(dto.getSummary());
+        basicInfoViewModel.setSummary(textHelper.generateLineBreaks(dto.getSummary()));
         basicInfoViewModel.setWebSite(dto.getWebsite());
         basicInfoViewModel.setLocation(locationConverter.createFromDto(dto.getLocation()));
         basicInfoViewModel.setProfiles(FXCollections.observableArrayList(profilesConverter.createFromDtos(dto.getProfiles())));

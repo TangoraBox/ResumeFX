@@ -31,6 +31,8 @@ to speed up CSS style prototyping.
 
 - Mobile layout
 
+- Double spaces on summary fields will be replaced with line breaks
+
 - `Dockerfile`, `docker-compose-yml` and `.gitlab-ci.yml` CI/CD example files
 
 - JSON file can be loaded externally to allow file edition without redeploy the project (see `docker-compose.yml`)
@@ -46,8 +48,9 @@ Java 11 or higher is required.
 
 ### JSON file Limitations
 
-- Some fields (ex: skill level) must be numeric and date fields must in YYYY-MM-DD pattern
-- picture field must be a valid and accessible url
+- Some fields must be numeric (eg: skill level handles a maximum value of 5)
+- Date fields must be in YYYY-MM-DD pattern
+- Picture field must be a valid and accessible url
 
 ---
 
