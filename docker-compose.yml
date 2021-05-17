@@ -11,7 +11,7 @@ services:
     tty: true
     ports:
       - 18080:8080
-    command: ./bin/start.sh
+    command: ./bin/restart.sh
     volumes:
       - data:/resume-fx-jpro/data/
     healthcheck:
